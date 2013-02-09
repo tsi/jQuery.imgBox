@@ -1,0 +1,222 @@
+/* Thumbnails */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\000032}}
+a.imgbox {
+  cursor: url('/images/zoomIn.png?1359240707'), -moz-zoom-in;
+}
+
+/* Throbber */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\000038}}
+.imgbox-loading::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url('/images/imgbox-spinner.gif?1256232834') center center no-repeat;
+  cursor: pointer;
+  z-index: 999;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\0000319}}
+.imgbox-loading img {
+  opacity: .6;
+}
+
+/* Overlay */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\0000326}}
+#imgbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 80;
+}
+
+/* Image */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\0000337}}
+.imgbox-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 90;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\0000344}}
+.imgbox-img {
+  padding: 0;
+  margin: 0;
+  border: none;
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  border-radius: 3px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\0000353}}
+.imgbox-title {
+  font-size: 12px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  width: 100%;
+  display: none;
+  border-radius: 2px;
+}
+
+/* Background */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\0000364}}
+.imgbox-bg-wrap {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  display: none;
+  border-radius: 6px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\0000371}}
+.imgbox-bg-inner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 5px;
+}
+
+/* Controls */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\0000382}}
+.imgbox-close,
+.imgbox-control {
+  position: fixed;
+  cursor: pointer;
+  line-height: 1;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\0000392}}
+.imgbox-close {
+  bottom: 0;
+  font-family: sans-serif;
+  font-size: 50px;
+  right: 5px;
+  opacity: .3;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\0000398}}
+.imgbox-close:hover {
+  opacity: .6;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\00003103}}
+.imgbox-control {
+  top: 50%;
+  margin-top: -80px;
+  font-size: 160px;
+  font-family: monospace;
+  font-weight: bold;
+  opacity: .2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\00003110}}
+.imgbox-control:hover {
+  opacity: .6;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\00003113}}
+.imgbox-control.imgbox-prev {
+  left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\00003116}}
+.imgbox-control.imgbox-next {
+  right: 0;
+}
+
+/* Light theme */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\00003126}}
+.imgbox-light #imgbox-overlay {
+  background: black;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\00003129}}
+.imgbox-light .imgbox-title {
+  color: white;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\00003133}}
+.imgbox-light.imgbox-no-overlay .imgbox-title {
+  color: black;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+  background: white;
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\00003141}}
+.imgbox-light .imgbox-bg-wrap {
+  background: white;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\00003147}}
+.imgbox-light .imgbox-bg-inner {
+  background: black;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\00003150}}
+.imgbox-light .imgbox-close, .imgbox-light .imgbox-control {
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\00003153}}
+.imgbox-light .imgbox-close {
+  text-shadow: 0 0 15px black;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\00003156}}
+.imgbox-light .imgbox-control {
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark theme */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\00003163}}
+.imgbox-dark #imgbox-overlay {
+  background: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\00003166}}
+.imgbox-dark .imgbox-title {
+  color: black;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\00003170}}
+.imgbox-dark.imgbox-no-overlay .imgbox-title {
+  color: white;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  background: black;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\00003178}}
+.imgbox-dark .imgbox-bg-wrap {
+  background: black;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\00003184}}
+.imgbox-dark .imgbox-bg-inner {
+  background: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\00003187}}
+.imgbox-dark .imgbox-close, .imgbox-dark .imgbox-control {
+  color: black;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\00003190}}
+.imgbox-dark .imgbox-close {
+  text-shadow: 0 0 15px white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/jqueryImgBox\/sass\/imgbox\.scss}line{font-family:\00003193}}
+.imgbox-dark .imgbox-control {
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
+}
