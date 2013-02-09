@@ -7,5 +7,5 @@ What I did was first update it to the most recent jQuery, add the slideshow feat
 <div align="center">
 <h2>jQuery.imgBox v2.x</h2>
 <em>a simple and beautiful lightbox plugin with a neat zoom effect and slideshow capabilities, using jQuery and Sass.</em><br>
-</em>oh and yeah, it is free and open source.</em>
+<em>oh and yeah, it is free and open source.</em>
 </div>
