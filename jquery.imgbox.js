@@ -297,7 +297,8 @@
       .remove();
 
     if (opts.speedOut > 0) {
-      var pos = getThumbPos(elem);
+      sib = sib || elem;
+      var pos = getThumbPos(sib);
 
       orig_pos = {
         top: pos.top - opts.padding,

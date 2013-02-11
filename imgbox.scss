@@ -1,6 +1,6 @@
 /* Thumbnails */
 a.imgbox {
-  cursor: image-url("zoomIn.png"), -moz-zoom-in;
+  cursor: url("images/zoomIn.png"), -moz-zoom-in;
 }
 
 /* Throbber */
@@ -12,7 +12,7 @@ a.imgbox {
     left: 0;
     bottom: 0;
     right: 0;
-    background: image-url("imgbox-spinner.gif") center center no-repeat;
+    background: url("images/imgbox-spinner.gif") center center no-repeat;
     cursor: pointer;
     z-index: 999;
   }
