@@ -1,13 +1,13 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>jQuery.imgBox by tsi</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <title>jQuery.imgBox by tsi</title>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="stylesheets/styles.css">
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -30,68 +30,77 @@
       <section>
         <p>imgBox is a jQuery plugin that implements a smooth zoom effect on images. Download it, try it, let me know what you think.</p>
 
-<h3>Usage</h3>
+        <h3>Usage</h3>
 
-<ol>
-<li>
-<p>Include the necessary files:</p>
+        <ol>
+          <li>
+            <p>Include the necessary files:</p>
 
-<div class="highlight"><pre><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"scripts/jquery.imgbox.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"css/imgbox.css"</span> <span class="nt">/&gt;</span>
-</pre></div>
-</li>
-<li>
-<p>Add some images, each containing a thumbnail linked to the bigger image. You can set the title using the title attribute:</p>
+            <div class="highlight"><pre><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+              <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"scripts/jquery.imgbox.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+              <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"css/imgbox.css"</span> <span class="nt">/&gt;</span>
+            </pre></div>
+          </li>
+          <li>
+            <p>Add some images, each containing a thumbnail linked to the bigger image. You can set the title using the title attribute:</p>
 
-<div class="highlight"><pre><span class="nt">&lt;a</span> <span class="na">title=</span><span class="s">"Lorem ipsum dolor sit amet"</span> <span class="na">href=</span><span class="s">"big_image1.jpg"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"thumb1.jpg"</span><span class="nt">/&gt;&lt;/a&gt;</span>
-<span class="nt">&lt;a</span> <span class="na">title=</span><span class="s">"Consectetur adipiscing elit"</span> <span class="na">href=</span><span class="s">"big_image2.jpg"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"thumb2.jpg"</span><span class="nt">/&gt;&lt;/a&gt;</span>
-<span class="nt">&lt;a</span> <span class="na">title=</span><span class="s">"Vivamus tincidunt massa in turpis"</span> <span class="na">href=</span><span class="s">"big_image3.jpg"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"thumb3.jpg"</span><span class="nt">/&gt;&lt;/a&gt;</span>
-</pre></div>
+            <div class="highlight"><pre><span class="nt">&lt;a</span> <span class="na">title=</span><span class="s">"Lorem ipsum dolor sit amet"</span> <span class="na">href=</span><span class="s">"big_image1.jpg"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"thumb1.jpg"</span><span class="nt">/&gt;&lt;/a&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">title=</span><span class="s">"Consectetur adipiscing elit"</span> <span class="na">href=</span><span class="s">"big_image2.jpg"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"thumb2.jpg"</span><span class="nt">/&gt;&lt;/a&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">title=</span><span class="s">"Vivamus tincidunt massa in turpis"</span> <span class="na">href=</span><span class="s">"big_image3.jpg"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"thumb3.jpg"</span><span class="nt">/&gt;&lt;/a&gt;</span>
+            </pre></div>
 
-<p>Note: This is the simplest form, imgBox is designed to play just as well with more complex html structure (e.g. ul &gt; li &gt; a &gt; img etc.).</p>
-</li>
-<li>
-<p>Apply the imgBox effect:</p>
+            <p>Note: This is the simplest form, imgBox is designed to play just as well with more complex html structure (e.g. ul &gt; li &gt; a &gt; img etc.).</p>
+          </li>
+          <li>
+            <p>Apply the imgBox effect:</p>
 
-<div class="highlight"><pre><span class="nx">$</span><span class="p">(</span><span class="s2">"a"</span><span class="p">).</span><span class="nx">imgbox</span><span class="p">();</span>
-</pre></div>
-</li>
-</ol><h3>Options</h3>
+            <div class="highlight"><pre><span class="nx">$</span><span class="p">(</span><span class="s2">"a"</span><span class="p">).</span><span class="nx">imgbox</span><span class="p">();</span>
+            </pre></div>
+          </li>
+        </ol><h3>Options</h3>
 
-<p>You may pass these options to control the look and feel of the imgBox effect:</p>
+        <p>You may pass these options to control the look and feel of the imgBox effect:</p>
 
-<div class="highlight"><pre><span class="nx">$</span><span class="p">(</span><span class="s2">"a"</span><span class="p">).</span><span class="nx">imgbox</span><span class="p">({</span>
-  <span class="nx">padding</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span>               <span class="c1">// Set the padding/transparent border around the image.</span>
-  <span class="nx">border</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>                 <span class="c1">// Set the solid border around the image.</span>
-  <span class="nx">alignment</span><span class="o">:</span> <span class="s1">'center'</span><span class="p">,</span>       <span class="c1">// Position - may be auto OR center.</span>
-  <span class="nx">allowMultiple</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>      <span class="c1">// Allow opening multiple imgBoxes.</span>
-  <span class="nx">autoScale</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>           <span class="c1">// Scale the image to fit the available space.</span>
-  <span class="nx">speedIn</span><span class="o">:</span> <span class="mi">500</span><span class="p">,</span>              <span class="c1">// Set the zoom-in speed.</span>
-  <span class="nx">speedOut</span><span class="o">:</span> <span class="mi">500</span><span class="p">,</span>             <span class="c1">// Set the zoom-out speed.</span>
-  <span class="nx">easingIn</span><span class="o">:</span> <span class="s1">'swing'</span><span class="p">,</span>         <span class="c1">// Set the zoom-in animation easing.</span>
-  <span class="nx">easingOut</span><span class="o">:</span> <span class="s1">'swing'</span><span class="p">,</span>        <span class="c1">// Set the zoom-out animation easing.</span>
-  <span class="nx">zoomOpacity</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>        <span class="c1">// If true, changes image transparency when zooming.</span>
-  <span class="nx">overlayShow</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>         <span class="c1">// Display an overlay under the imgBox.</span>
-  <span class="nx">overlayOpacity</span><span class="o">:</span> <span class="mf">0.7</span><span class="p">,</span>       <span class="c1">// Set overlay opacity.</span>
-  <span class="nx">hideOnOverlayClick</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>  <span class="c1">// Hide imgBox when the overlay is clicked.</span>
-  <span class="nx">hideOnContentClick</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span> <span class="c1">// Hide imgBox when the image is clicked.</span>
-  <span class="nx">slideshow</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>           <span class="c1">// Display next/previous controls.</span>
-  <span class="nx">theme</span><span class="o">:</span> <span class="s1">'light'</span>             <span class="c1">// Choose a color scheme (light/black).</span>
-<span class="p">});</span>
-</pre></div>
+        <div class="highlight"><pre><span class="nx">$</span><span class="p">(</span><span class="s2">"a"</span><span class="p">).</span><span class="nx">imgbox</span><span class="p">({</span>
+          <span class="nx">padding</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span>               <span class="c1">// Set the padding/transparent border around the image.</span>
+          <span class="nx">border</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>                 <span class="c1">// Set the solid border around the image.</span>
+          <span class="nx">alignment</span><span class="o">:</span> <span class="s1">'center'</span><span class="p">,</span>       <span class="c1">// Position - may be auto OR center.</span>
+          <span class="nx">allowMultiple</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>      <span class="c1">// Allow opening multiple imgBoxes.</span>
+          <span class="nx">autoScale</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>           <span class="c1">// Scale the image to fit the available space.</span>
+          <span class="nx">speedIn</span><span class="o">:</span> <span class="mi">500</span><span class="p">,</span>              <span class="c1">// Set the zoom-in speed.</span>
+          <span class="nx">speedOut</span><span class="o">:</span> <span class="mi">500</span><span class="p">,</span>             <span class="c1">// Set the zoom-out speed.</span>
+          <span class="nx">easingIn</span><span class="o">:</span> <span class="s1">'swing'</span><span class="p">,</span>         <span class="c1">// Set the zoom-in animation easing.</span>
+          <span class="nx">easingOut</span><span class="o">:</span> <span class="s1">'swing'</span><span class="p">,</span>        <span class="c1">// Set the zoom-out animation easing.</span>
+          <span class="nx">zoomOpacity</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>        <span class="c1">// If true, changes image transparency when zooming.</span>
+          <span class="nx">overlayShow</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>         <span class="c1">// Display an overlay under the imgBox.</span>
+          <span class="nx">overlayOpacity</span><span class="o">:</span> <span class="mf">0.7</span><span class="p">,</span>       <span class="c1">// Set overlay opacity.</span>
+          <span class="nx">hideOnOverlayClick</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>  <span class="c1">// Hide imgBox when the overlay is clicked.</span>
+          <span class="nx">hideOnContentClick</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span> <span class="c1">// Hide imgBox when the image is clicked.</span>
+          <span class="nx">slideshow</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>           <span class="c1">// Display next/previous controls.</span>
+          <span class="nx">theme</span><span class="o">:</span> <span class="s1">'light'</span>             <span class="c1">// Choose a color scheme (light/black).</span>
+          <span class="p">});</span>
+        </pre></div>
 
-<h3>Demo</h3>
+        <h3>Demo</h3>
 
-<p><a href="https://github.com/TODO" class="user-mention">@TODO</a></p>
+        <p>
+          <a href="images/IMG_4070.jpg" title=""><img src="images/thumbs/IMG_4070.jpg" alt="" /></a>
+          <a href="images/IMG_8474.JPG" title=""><img src="images/thumbs/IMG_8474.JPG" alt="" /></a>
+          <a href="images/IMG_8475.JPG" title=""><img src="images/thumbs/IMG_8475.JPG" alt="" /></a>
+          <a href="images/P1010533.JPG" title=""><img src="images/thumbs/P1010533.JPG" alt="" /></a>
+          <a href="images/P1010540.JPG" title=""><img src="images/thumbs/P1010540.JPG" alt="" /></a>
+          <a href="images/P1100940.JPG" title=""><img src="images/thumbs/P1100940.JPG" alt="" /></a>
+          <a href="images/P1140523.jpg" title=""><img src="images/thumbs/P1140523.jpg" alt="" /></a>
+          <a href="images/Pic 008.jpg" title=""><img src="images/thumbs/Pic 008.jpg" alt="" /></a>
+        </p>
 
-<h3>Credit</h3>
+        <h3>Credit</h3>
 
-<p>The plugin was originally published by jQueryGlobe (2009) v2.x was written by Tsachi Shlidor (@shlidor).</p>
+        <p>The plugin was originally published by jQueryGlobe (2009) v2.x was written by Tsachi Shlidor (@shlidor).</p>
 
-<h3>License</h3>
+        <h3>License</h3>
 
-<p>Dual licensed under the MIT and GPL (read: yeah, it's free. open source FTW).</p>
+        <p>Dual licensed under the MIT and GPL (read: yeah, it's free. open source FTW).</p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/tsi">tsi</a></p>
@@ -99,16 +108,16 @@
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-38378740-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+      var pageTracker = _gat._getTracker("UA-38378740-1");
+      pageTracker._trackPageview();
+    } catch(err) {}
+    </script>
 
   </body>
-</html>
+  </html>
