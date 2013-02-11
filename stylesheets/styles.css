@@ -26,6 +26,7 @@ h1 {
 
 h2 {
   color:#393939;
+  margin-top: 40px;
 }
 
 h3, h4, h5, h6 {
@@ -177,14 +178,14 @@ hr {
 }
 
 footer {
-  width:270px;
+  width:290px;
   float:left;
   position:fixed;
-  bottom:50px;
+  bottom:20px;
 }
 
 /* Images */
-a[rel="ib"] {
+.images a {
   position: relative;
   display: inline-block;
   width: 33.33%;
@@ -192,7 +193,7 @@ a[rel="ib"] {
   vertical-align: middle;
   text-align: center;
 }
-a[rel="ib"] img {
+.images img {
   border: 1px solid #777;
   padding: 3px;
 }

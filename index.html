@@ -31,23 +31,24 @@
         </ul>
       </header>
       <section>
-        <p>imgBox is a jQuery plugin that implements a smooth zoom effect on images. Download it, try it, let me know what you think.</p>
+        <p>imgBox is a jQuery gallery plugin that implements a smooth zoom effect on images. download it, try it, let me know what you think.</p>
 
-<h3>Demo</h3>
-  <p>This is imgBox as it comes out of the box, see the options section below for more... well, options.</p>
-  <div>
-    <a rel="ib" href="images/img-2.jpg" title=""><img src="images/thumbs/img-2.jpg" alt="" /></a>
-    <a rel="ib" href="images/img-1.jpg" title=""><img src="images/thumbs/img-1.jpg" alt="" /></a>
-    <a rel="ib" href="images/img-3.jpg" title=""><img src="images/thumbs/img-3.jpg" alt="" /></a>
-    <a rel="ib" href="images/img-4.jpg" title=""><img src="images/thumbs/img-4.jpg" alt="" /></a>
-    <a rel="ib" href="images/img-5.jpg" title=""><img src="images/thumbs/img-5.jpg" alt="" /></a>
-    <a rel="ib" href="images/img-6.jpg" title=""><img src="images/thumbs/img-6.jpg" alt="" /></a>
-    <a rel="ib" href="images/img-7.jpg" title=""><img src="images/thumbs/img-7.jpg" alt="" /></a>
-    <a rel="ib" href="images/img-8.jpg" title=""><img src="images/thumbs/img-8.jpg" alt="" /></a>
-    <a rel="ib" href="images/img-9.jpg" title=""><img src="images/thumbs/img-9.jpg" alt="" /></a>
+<h2>Demo</h2>
+  <p>This is imgBox as it comes out of the box, each row is configured with slightly different options.<br>
+    See the 'Options' section below for more... well, options.</p>
+  <div class="images">
+    <a href="images/img-2.jpg"><img src="images/thumbs/img-2.jpg" alt="Image 1 of 9" /></a>
+    <a href="images/img-1.jpg" title="Lorem ipsum dolor sit amet"><img src="images/thumbs/img-1.jpg" alt="Image 2 of 9" /></a>
+    <a href="images/img-3.jpg"><img src="images/thumbs/img-3.jpg" alt="Image 3 of 9" /></a>
+    <a href="images/img-4.jpg"><img src="images/thumbs/img-4.jpg" alt="Image 4 of 9" /></a>
+    <a href="images/img-5.jpg" title="Donec at ante purus"><img src="images/thumbs/img-5.jpg" alt="Image 5 of 9" /></a>
+    <a href="images/img-6.jpg"><img src="images/thumbs/img-6.jpg" alt="Image 6 of 9" /></a>
+    <a href="images/img-7.jpg" title="Etiam sit amet urna et libero"><img src="images/thumbs/img-7.jpg" alt="Image 7 of 9" /></a>
+    <a href="images/img-8.jpg"><img src="images/thumbs/img-8.jpg" alt="Image 8 of 9" /></a>
+    <a href="images/img-9.jpg" title="Sed pellentesque enim in"><img src="images/thumbs/img-9.jpg" alt="Image 9 of 9" /></a>
   </div>
 
-<h3>Usage</h3>
+<h2>Usage</h2>
 
 <ol>
 <li>
@@ -74,7 +75,7 @@
 <div class="highlight"><pre><span class="nx">$</span><span class="p">(</span><span class="s2">"a"</span><span class="p">).</span><span class="nx">imgbox</span><span class="p">();</span>
 </pre></div>
 </li>
-</ol><h3>Options</h3>
+</ol><h2>Options</h2>
 
 <p>You may pass these options to control the look and feel of the imgBox effect:</p>
 
@@ -98,17 +99,16 @@
 <span class="p">});</span>
 </pre></div>
 
-<h3>Credit</h3>
+<h2>Credit</h2>
 
 <p>The plugin was originally published by jQueryGlobe (2009) v2.x was written by Tsachi Shlidor (@shlidor).</p>
 
-<h3>License</h3>
+<h2>License</h2>
 
 <p>Dual licensed under the MIT and GPL (read: yeah, it's free. open source FTW).</p>
       </section>
       <footer>
-        <p>This project is maintained by <a href="https://github.com/tsi">tsi</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p>This project is maintained by <a href="https://github.com/tsi">tsi</a> (<a target="_blank" href="https://twitter.com/shlidor">@shlidor</a>)</p>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
@@ -121,8 +121,22 @@
               var pageTracker = _gat._getTracker("UA-38378740-1");
             pageTracker._trackPageview();
             } catch(err) {}
+          </script>
+          <script type="text/javascript">
 
-            jQuery('a[rel="ib"]').imgbox();
+            jQuery('a:eq(0), a:eq(1), a:eq(2)', '.images').imgbox();
+            jQuery('a:eq(3), a:eq(4), a:eq(5)', '.images').imgbox({
+              overlayShow: false,
+              theme: 'dark'
+            });
+            jQuery('a:eq(6), a:eq(7), a:eq(8)', '.images').imgbox({
+              alignment: 'auto',
+              overlayShow: false,
+              hideOnContentClick: false,
+              slideshow: false,
+              theme: 'dark'
+            });
+
           </script>
 
   </body>
