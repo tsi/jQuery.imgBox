@@ -3,7 +3,7 @@
 body {
   padding:50px;
   font:16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#777;
+  color:#555;
   font-weight:300;
 }
 
@@ -181,6 +181,19 @@ footer {
   float:left;
   position:fixed;
   bottom:50px;
+}
+
+/* Images */
+a[rel="ib"] {
+  display: inline-block;
+  width: 33.33%;
+  margin-left: -5px;
+  vertical-align: middle;
+  text-align: center;
+}
+a[rel="ib"] img {
+  border: 1px solid #777;
+  padding: 3px;
 }
 
 @media print, screen and (max-width: 960px) {

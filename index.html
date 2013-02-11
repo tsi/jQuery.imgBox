@@ -7,7 +7,10 @@
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="imgBox/imgbox.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript" src="imgBox/jquery.imgbox.js"></script>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -30,6 +33,20 @@
       <section>
         <p>imgBox is a jQuery plugin that implements a smooth zoom effect on images. Download it, try it, let me know what you think.</p>
 
+<h3>Demo</h3>
+  <p>This is imgBox as it comes out of the box, see the options section below for more... well, options.</p>
+  <div>
+    <a rel="ib" href="images/img-2.jpg" title=""><img src="images/thumbs/img-2.jpg" alt="" /></a>
+    <a rel="ib" href="images/img-1.jpg" title=""><img src="images/thumbs/img-1.jpg" alt="" /></a>
+    <a rel="ib" href="images/img-3.jpg" title=""><img src="images/thumbs/img-3.jpg" alt="" /></a>
+    <a rel="ib" href="images/img-4.jpg" title=""><img src="images/thumbs/img-4.jpg" alt="" /></a>
+    <a rel="ib" href="images/img-5.jpg" title=""><img src="images/thumbs/img-5.jpg" alt="" /></a>
+    <a rel="ib" href="images/img-6.jpg" title=""><img src="images/thumbs/img-6.jpg" alt="" /></a>
+    <a rel="ib" href="images/img-7.jpg" title=""><img src="images/thumbs/img-7.jpg" alt="" /></a>
+    <a rel="ib" href="images/img-8.jpg" title=""><img src="images/thumbs/img-8.jpg" alt="" /></a>
+    <a rel="ib" href="images/img-9.jpg" title=""><img src="images/thumbs/img-9.jpg" alt="" /></a>
+  </div>
+
 <h3>Usage</h3>
 
 <ol>
@@ -37,8 +54,8 @@
 <p>Include the necessary files:</p>
 
 <div class="highlight"><pre><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"scripts/jquery.imgbox.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"css/imgbox.css"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"imgBox/jquery.imgbox.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"imgBox/imgbox.css"</span> <span class="nt">/&gt;</span>
 </pre></div>
 </li>
 <li>
@@ -81,19 +98,6 @@
 <span class="p">});</span>
 </pre></div>
 
-<h3>Demo</h3>
-
-<p>
-  <a href="images/IMG_4070.jpg" title=""><img src="images/thumbs/IMG_4070.jpg" alt="" /></a>
-  <a href="images/IMG_8474.JPG" title=""><img src="images/thumbs/IMG_8474.JPG" alt="" /></a>
-  <a href="images/IMG_8475.JPG" title=""><img src="images/thumbs/IMG_8475.JPG" alt="" /></a>
-  <a href="images/P1010533.JPG" title=""><img src="images/thumbs/P1010533.JPG" alt="" /></a>
-  <a href="images/P1010540.JPG" title=""><img src="images/thumbs/P1010540.JPG" alt="" /></a>
-  <a href="images/P1100940.JPG" title=""><img src="images/thumbs/P1100940.JPG" alt="" /></a>
-  <a href="images/P1140523.jpg" title=""><img src="images/thumbs/P1140523.jpg" alt="" /></a>
-  <a href="images/Pic 008.jpg" title=""><img src="images/thumbs/Pic 008.jpg" alt="" /></a>
-</p>
-
 <h3>Credit</h3>
 
 <p>The plugin was originally published by jQueryGlobe (2009) v2.x was written by Tsachi Shlidor (@shlidor).</p>
@@ -117,6 +121,8 @@
               var pageTracker = _gat._getTracker("UA-38378740-1");
             pageTracker._trackPageview();
             } catch(err) {}
+
+            jQuery('a[rel="ib"]').imgbox();
           </script>
 
   </body>
