@@ -185,6 +185,7 @@ footer {
 
 /* Images */
 a[rel="ib"] {
+  position: relative;
   display: inline-block;
   width: 33.33%;
   margin-left: -5px;
