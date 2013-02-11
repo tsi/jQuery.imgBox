@@ -38,6 +38,7 @@
     }
 
     elem = e;
+    sib = e;
     opts = $.extend({}, $.fn.imgbox.defaults, o);
     nr = $(elem).index();
 
